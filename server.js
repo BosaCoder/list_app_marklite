@@ -15,18 +15,18 @@ app.use(bodyParser.json());
 // Configuración de la conexión a la base de datos
 const pool = new Pool({
     max: 10,
-    host: 'dpg-cqv3bg88fa8c73feojig-a.oregon-postgres.render.com',
-    user: 'root',
-    password: 'wEIbaudljKt0OlJ1ifSenYFZVydMyKnY',
-    database: 'list_app',
+    host: 'cd1goc44htrmfn.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
+    user: 'uqeqr4ocsnpmu',
+    password: 'pec0585dfce074cb4fe5bed82c7981d188557d53c6393e36a4ab3b8ff1d7d2be3',
+    database: 'd4gq52s9kraobb',
     port: 5432,
     ssl: {
         rejectUnauthorized: false
     },
-    // Configura el search_path para utilizar el esquema list_app
+    // Configura el search_path para utilizar el esquema d4gq52s9kraobb
     statement_timeout: 30000, // Opcional: configurar timeout para las consultas
     application_name: 'MyApp',
-    options: '-c search_path=list_app' // Aquí se configura el search_path
+    options: '-c search_path=d4gq52s9kraobb' // Aquí se configura el search_path
 });
 
 
