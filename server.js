@@ -23,10 +23,10 @@ const pool = new Pool({
     ssl: {
         rejectUnauthorized: false
     },
-    // Configura el search_path para utilizar el esquema d4gq52s9kraobb
+    // Configura el search_path para utilizar el esquema list_app
     statement_timeout: 30000, // Opcional: configurar timeout para las consultas
-    application_name: 'MyApp',
-    options: '-c search_path=d4gq52s9kraobb' // Aquí se configura el search_path
+    application_name: 'list_app',
+    options: '-c search_path=list_app' // Aquí se configura el search_path
 });
 
 
